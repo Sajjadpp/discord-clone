@@ -211,6 +211,7 @@ header{
 
     .textAndimg{
         flex-direction: column-reverse;
+        font-size: 5.9vw;
     }  
 
     .text-wrap{
