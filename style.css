@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.d{
+    display: flex;
+    align-items: center;
+}
+body{
+    background: linear-gradient(to bottom, #26035e , rgb(90, 92, 255), #5523a7);
+    background-size: cover;
+}
+
+header{
+
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo-container{
+
+    display: flex;
+    width: 25%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: "kanit", sans-serif;
+    color: white;
+}
+
+.logo-container img{
+    
+    width: 60px;
+}
+
+.nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    font-family: "poppins";
+    font-weight: 500;
+}
+
+.nav a:hover{
+
+    text-decoration: underline;
+}
+
+.login{
+    width: 25%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.login span{
+
+    color: black;
+    font-family: "poppins";
+    font-weight: 600;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.burger-container{
+    display: none;
+}
+
+.content-header{
+
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    /* font-size: 20px */
+    font-family: "kanit";
+    box-shadow: 0 0 2px rgba(177, 177, 177, 0.99);
+}
+
+.content ul{
+
+    margin-top: 50px;
+}
+.content li{
+    padding: 7px 15px;
+    margin-top: 5px;
+    font-family: "poppins";
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.content-footer{
+
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+}
+
+.content-footer button{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(107, 107, 255);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content-footer i{
+    margin-right: 10px;
+}
+.content li:hover{
+
+    text-decoration: underline;
+}
+
+.first{
+
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 110svh;
+    width: 100%;
+}
+
+.textAndimg{
+
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-wrap{
+    
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.text-wrap h2{
+
+    font-size: 51px;
+    font-family: "Anton sc";
+    letter-spacing: 4px;
+    font-weight: 800;
+}
+
+.text-wrap h3{
+
+    display: flex;
+    font-size: 20px;
+    font-family: "poppins";
+    font-weight: 400;
+}
+
+.img-wrap{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.img-wrap img{
+
+    display: flex;
+    scale: 1.5;
+
+}
+
+@media (max-width:600px) {
+    .nav{
+        display: none;
+    }
+
+    .logo-container{
+
+        width: 60%;
+    }
+
+    .login{
+        width: 20%;
+    }
+
+    .logo-container img{
+        margin-left: 10px;
+    }
+
+    .textAndimg{
+        flex-direction: column-reverse;
+    }  
+
+    .text-wrap{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-wrap{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img-wrap img{
+        width: 50%;
+        
+    }
+
+    .buttons-container{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .burger-container{
+
+        display: flex;
+        color: white;
+        width: 20%;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .content{
+        display: none;
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        z-index: 3;
+        width: 60%;
+        top: 1px;
+        color: black;
+        left: 1px;
+        transition: ease .8s;
+    }
+
+
+}
+
+
+.buttons-container{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.buttons-container button{
+
+    padding: 20px 25px;
+    margin: 10px;
+    min-width: 350px;
+    border-radius: 30px;
+    border: none;
+    font-size: 23px
+}
+
+.body{
+
+    padding: 0px 40px;
+}
+
+.sections{
+
+    width: 100%;
+    border: 4px solid rgba(255, 255, 255, 0.603);
+    display: flex;
+    padding: 20px;
+    background-color: rgba(177, 177, 177, 0.288);
+    border-radius: 40px;
+    min-height: 90vh;
+}
+
+.sections video{
+
+    width: 60%;
+    border-radius: 40px;
+    height: 100%;
+    object-fit: fill;
+    border: none;
+}
+
+
+
+@media (max-width:600px) {
+
+    .sections{
+
+        flex-direction: column;
+        min-height: 100%;
+    }
+    .sections video{
+
+        width: 100%;
+    }
+    .sections .text-area{
+        width: 100%;
+    }
+}
+
+    
+.text-area{
+
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    color: white;
+    
+}
+
+.text-area h2{
+
+    font-family: "anton sc";
+    font-weight: 100;
+    font-size: 60px;
+
+}
+
+.text-area h4{
+
+    font-family: "kanit";
+    font-weight: 400;
+}
+
+.blue{
+
+    background-color: rgb(0, 0, 153);
+    color: white;
+
+}
+
+.sections2{
+
+    margin-top: 300px;
+}
+
+.marquee-wrapper{
+
+    width: 100%;
+    height:140px;
+    background: linear-gradient(to bottom, rgb(77, 77, 255) , rgb(121, 121, 255), rgb(170, 170, 255));
+    position: absolute;
+    left: 0;
+    margin-right: 20px;
+    margin-top: 80px;  
+    display: flex;
+}
+
+.marquee{
+
+    display: flex;
+    width: 100vw;
+    gap: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.marquee div{
+
+    display: flex;
+    padding-left: 100%;
+    font-family: "kanit", sans-serif;
+    text-align: center;
+    animation: marquee 20s linear infinite;
+    min-width: 100%;
+     justify-content: center;
+     align-items: center;
+     gap: 50PX;
+     color: #fff;
+
+}
+
+.marquee div h1{
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.marquee div i{
+
+    font-size: 30px;
+}
+.marquee2{
+
+    animation-delay: 7s;
+}
+
+@keyframes marquee{
+
+    0%{
+        transform: translate(0, 0);
+    }
+    100%{
+        transform: translate(-150%, 0);
+    }
+}
+
+.suggestforDownload{
+    margin-top: 60px;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    background-image: url(https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/6658cc069d1eb1caf9426914_Footer-Art_cut-p-1600.webp);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: contain;
+}
+.suggestforDownload h3{
+    font-size: 70px;
+    font-family: "kanit", sans-serif;
+    color: #fafafa;
+}
+
+.suggestforDownload button{
+
+    border: none;
+    padding: 20px 25px;
+    width: 350px;
+    border-radius: 30px;
+    background-color: rgb(107, 107, 255);
+    color: white;
+    font-size: 20px;
+
+
+}   
+.suggestforDownload button i{
+    margin-right: 10px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.suggestforDownload img{
+
+    position: relative;
+    top: 60px;
+    height: 250px;
+}
+
+footer{
+
+    height: 100dvh;
+    width: 100%;
+    
+}
+
+.first-footer{
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    height: 80%;
+
+}
+
+.first-footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+#social-media{
+
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    padding: 70px 0 0 100px;
+    gap: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+.first-footer h3{
+
+    font-size: large;
+    color: #fff;
+    font-family: "kanit", sans-serif;
+    font-weight: 300; 
+    margin-bottom: 20px;
+}
+
+.first-footer a{
+
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "poppins";
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.hr{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.last-footer{
+
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20%;
+
+
+}
+
+.last-footer div{
+
+    color: white;
+    font-size: 30px;
+    font-family: "kanit";
+    font-weight: 900;
+}
+
+.last-footer button{
+
+    padding: 13px 14px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(107, 107, 255);
+    color: white;
+    font-weight: 500;
+    font-family: "poppins";
+}
