@@ -191,75 +191,7 @@ header{
 
 }
 
-@media (max-width:600px) {
-    .nav{
-        display: none;
-    }
 
-    .logo-container{
-
-        width: 60%;
-    }
-
-    .login{
-        width: 20%;
-    }
-
-    .logo-container img{
-        margin-left: 10px;
-    }
-
-    .textAndimg{
-        flex-direction: column-reverse;
-        font-size: 5.9vw;
-    }  
-
-    .text-wrap{
-        width: 100%;
-        text-align: center;
-    }
-
-    .img-wrap{
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        
-    }
-
-    .img-wrap img{
-        width: 50%;
-        
-    }
-
-    .buttons-container{
-        flex-direction: column;
-        margin-top: 10px;
-    }
-
-    .burger-container{
-
-        display: flex;
-        color: white;
-        width: 20%;
-        justify-content: center;
-        font-size: 30px;
-    }
-
-    .content{
-        display: none;
-        position: fixed;
-        background-color: white;
-        height: 100%;
-        z-index: 3;
-        width: 60%;
-        top: 1px;
-        color: black;
-        left: 1px;
-        transition: ease .8s;
-    }
-
-
-}
 
 
 .buttons-container{
@@ -268,7 +200,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    margin-bottom: 50px ;
+    margin-top: 10px;
 
 }
 
@@ -556,4 +489,98 @@ footer{
     color: white;
     font-weight: 500;
     font-family: "poppins";
+}
+
+@media (max-width: 700px) {
+    
+    .suggestforDownload h3{
+
+        font-size: 5.9vw;
+    }
+}
+
+
+@media (max-width:600px) {
+    .nav{
+        display: none;
+    }
+
+    .logo-container{
+
+        width: 60%;
+    }
+
+    .login{
+        width: 20%;
+    }
+
+    .logo-container img{
+        margin-left: 10px;
+    }
+
+    .textAndimg{
+        flex-direction: column-reverse;
+        
+    }  
+
+    .textAndimg h2{
+
+        font-size: 5.9vw;
+    }
+    .text-wrap{
+        width: 100%;
+        text-align: center;
+    }
+
+    .img-wrap{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .img-wrap img{
+        width: 50%;
+        z-index: -3;
+        opacity: .5;
+        margin-top: 20px;
+        
+    }
+
+    .buttons-container{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .sections .text-area span h2{
+        font-size: 5.9vw;
+    }
+    .sections .text-area span h4{
+
+        margin-bottom: 10px;
+    }
+
+    .burger-container{
+
+        display: flex;
+        color: white;
+        width: 20%;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .content{
+        display: none;
+        position: fixed;
+        background-color: white;
+        height: 100%;
+        z-index: 3;
+        width: 60%;
+        top: 1px;
+        color: black;
+        left: 1px;
+        transition: ease .8s;
+    }
+
+    
+
 }
