@@ -14,3 +14,8 @@ close.addEventListener("click", ()=>{
 
     content.style.display = "none"
 })
+
+var n = 1;
+
+    <title>D</title>
+    console.log(1);

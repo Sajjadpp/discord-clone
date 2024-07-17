@@ -299,7 +299,7 @@ header{
     margin-top: 300px;
 }
 
-.marquee-wrapper{
+.marquee-container{
 
     width: 100%;
     height:140px;
@@ -308,31 +308,58 @@ header{
     left: 0;
     margin-right: 20px;
     margin-top: 80px;  
-    display: flex;
-}
-
-.marquee{
-
-    display: flex;
-    width: 100vw;
-    gap: 50px;
-    white-space: nowrap;
     overflow: hidden;
 }
 
-.marquee div{
+.marquee-wrap{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.marquee{
+    display: block;
+    position: absolute;
+    margin: auto auto;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100%;
+}
+
+.marquee span{
+
+    display: inline-block;
+    padding-left: 100%;
+    text-align: center;
+    white-space: nowrap;
+    min-width: 100%;
+    height: 100%;
+    line-height: 140px;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee2 span{
+
+    animation-delay: 10s;
+    margin-left: 40px;
+}
+
+.h1andi-container{
 
     display: flex;
-    padding-left: 100%;
-    font-family: "kanit", sans-serif;
-    text-align: center;
-    animation: marquee 20s linear infinite;
-    min-width: 100%;
-     justify-content: center;
-     align-items: center;
-     gap: 50PX;
-     color: #fff;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    font-family: "kanit";
+    color: white;
 }
 
 .marquee div h1{
@@ -344,9 +371,10 @@ header{
 
     font-size: 30px;
 }
-.marquee2{
 
-    animation-delay: 7s;
+
+#b-marquee{
+    margin-top: 300px;
 }
 
 @keyframes marquee{
@@ -355,7 +383,7 @@ header{
         transform: translate(0, 0);
     }
     100%{
-        transform: translate(-150%, 0);
+        transform: translate(-100%, 0);
     }
 }
 
@@ -496,6 +524,12 @@ footer{
 .span-2{
 
     display: flex;  
+}
+
+.span-container{
+
+    display: flex;
+    gap: 20px;
 }
 
 @media (max-width: 700px) {
