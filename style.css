@@ -7,6 +7,8 @@
     display: flex;
     align-items: center;
 }
+
+
 body{
     background: linear-gradient(to bottom, #26035e , rgb(90, 92, 255), #5523a7);
     background-size: cover;
@@ -491,11 +493,44 @@ footer{
     font-family: "poppins";
 }
 
+.span-2{
+
+    display: flex;  
+}
+
 @media (max-width: 700px) {
     
     .suggestforDownload h3{
 
         font-size: 5.9vw;
+    }
+    .span-2{
+
+        flex-direction: column;
+    }
+    .span-container{
+        display: flex;
+    }
+
+    .first-footer{
+        width: 100%;
+        flex-direction: column;
+        padding: 30px;
+    }
+    #social-media{
+
+        width: 100%;
+    }
+    .span-2 div{
+
+        margin-top: 50px;
+    }
+    .sections2{
+
+        margin-top: 150px;
+    }
+    #b-marquee{
+        margin-top: 300px;
     }
 }
 
